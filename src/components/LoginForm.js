@@ -58,7 +58,7 @@ function LoginForm(props) {
     const handleChange = name => event => {
         let err = [];
         if ( name === 'username' ) {
-            if (! /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(event.target.value) ) {
+            if (! /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(event.target.value) ) {
                 err = ['Not a valid email']
             }
         }

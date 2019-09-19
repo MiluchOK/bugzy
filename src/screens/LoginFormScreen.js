@@ -1,10 +1,9 @@
 import React from "react";
 import * as Promise from "bluebird";
-import Paper from '@material-ui/core/Paper';
 import LoginForm from "../components/LoginForm";
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
-import { green, red } from '@material-ui/core/colors';
+import { green } from '@material-ui/core/colors';
 import { makeStyles } from '@material-ui/core/styles';
 import CenteredPaper from "../components/CenteredPaper";
 import NotificationBox from "../components/NotificationBox";
@@ -23,9 +22,6 @@ const useStyles = makeStyles(theme => ({
         backgroundColor: green[500],
         marginBottom: theme.spacing(3)
     },
-    // clearIcon: {
-    //     backgroundColor: theme.palette.error.light
-    // }
 }));
 
 function LoginFormScreen() {
