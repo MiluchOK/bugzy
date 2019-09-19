@@ -98,7 +98,7 @@ function LoginForm(props) {
                     label="Username"
                     fullWidth={true}
                     error={globalErrors.length > 0}
-                    errorMessages={values.username.errors}
+                    errorMessages={props.brokenEmailVerification ? [] : values.username.errors}
                     disabled={loading}
                     className={classes.textField}
                     value={values.username.value}
@@ -109,7 +109,7 @@ function LoginForm(props) {
                 <BugzyField
                     id="standard-name"
                     label="Password"
-                    type={'password'}
+                    type={props.brokenPasswordField ? 'text' : 'password'}
                     fullWidth={true}
                     error={globalErrors.length > 0}
                     errorMessages={values.password.errors}
