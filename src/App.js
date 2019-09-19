@@ -1,13 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
+import { Helmet } from "react-helmet";
+// import logo from './logo.svg';
 import AppRouter from './AppRouter'
 
 function App() {
   return (
     <div className="App">
-      <body className="App-body">
+        <Helmet>
+            <meta charSet="utf-8" />
+            <title>Bugzy</title>
+            <link rel="icon" type="image/jpg" href={`${process.env.PUBLIC_URL}/logo.jpg`} />
+        </Helmet>
         <AppRouter />
-      </body>
     </div>
   );
 }
