@@ -124,6 +124,7 @@ function LoginForm(props) {
 
                 <div className={classes.wrapper}>
                     <Button
+                        id={'login-button'}
                         variant="contained"
                         color="primary"
                         disabled={loading}
