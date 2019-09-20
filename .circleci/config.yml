@@ -7,10 +7,10 @@ version: 2
 
 jobs:
   build:
-
-    branches:
-      only:
-      - master
+    filters:
+      branches:
+        only:
+        - master
 
     docker:
     # specify the version you desire here
