@@ -32,8 +32,13 @@ function LoginFormScreen(props) {
     const [users, setUsers] = React.useState([]);
     const [signInSuccess, setsignInSuccess] = React.useState(undefined);
     const queryParams = queryString.parse(props.location.search);
+
     const brokenPasswordField = queryParams.bug === '1';
     const brokenEmailVerification = queryParams.bug === '2';
+    const brokenLoadingLock = queryParams.bug === '3';
+    const brokenAddUser = queryParams.bug === '4';
+    const cantLogin = queryParams.bug === '5';
+    const loginEveryone = queryParams.bug === '6';
 
     // Turn all the bugs on when it is shitshow time
     // const shitshowMode = queryParams.shitshow === 'true';
@@ -43,7 +48,7 @@ function LoginFormScreen(props) {
         return Promise.delay(delayTime)
         .then(() => {
             return new Promise(function(resolve, reject) {
-                if (users.some(u => (u.username === username && u.password === password))) {
+                if (loginEveryone || (users.some(u => (u.username === username && u.password === password)) && !cantLogin)) {
                     console.log("Good login.");
                     setsignInSuccess(true);
                     resolve()
@@ -68,13 +73,15 @@ function LoginFormScreen(props) {
             handleSubmit={handleSubmit}
             brokenPasswordField={brokenPasswordField}
             brokenEmailVerification={brokenEmailVerification}
+            brokenLoadingLock={brokenLoadingLock}
+
         />
     </CenteredPaper>;
 
     let userCreationPaper = <CenteredPaper>
         <Typography>Existing Users</Typography>
         <Button
-            onClick={appendRandomUser}
+            onClick={brokenAddUser ? () => {} : appendRandomUser}
             variant="contained"
             color="primary"
             className={classes.button}

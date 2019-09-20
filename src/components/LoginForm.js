@@ -80,7 +80,9 @@ function LoginForm(props) {
             { loading ? "" : renderedErrors}
             <form className={classes.formWrapper}
                   onSubmit={(e) => {
-                      setLoading(true);
+                      if ( !props.brokenLoadingLock ) {
+                          setLoading(true)
+                      }
                       props.handleSubmit(e, values.username.value, values.password.value)
                       .then(() => {
                           console.log("Successful resolution");
