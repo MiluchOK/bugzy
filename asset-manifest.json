@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/bugzy/static/css/main.85641beb.chunk.css",
-    "main.js": "/bugzy/static/js/main.4db56842.chunk.js",
-    "main.js.map": "/bugzy/static/js/main.4db56842.chunk.js.map",
+    "main.js": "/bugzy/static/js/main.0325911a.chunk.js",
+    "main.js.map": "/bugzy/static/js/main.0325911a.chunk.js.map",
     "runtime~main.js": "/bugzy/static/js/runtime~main.2607f8d5.js",
     "runtime~main.js.map": "/bugzy/static/js/runtime~main.2607f8d5.js.map",
     "static/js/2.3cb87a6a.chunk.js": "/bugzy/static/js/2.3cb87a6a.chunk.js",
     "static/js/2.3cb87a6a.chunk.js.map": "/bugzy/static/js/2.3cb87a6a.chunk.js.map",
     "index.html": "/bugzy/index.html",
-    "precache-manifest.fbfae38251c93b12206ce6301373390c.js": "/bugzy/precache-manifest.fbfae38251c93b12206ce6301373390c.js",
+    "precache-manifest.85d17f702921ed06908d7e14bdeb66c7.js": "/bugzy/precache-manifest.85d17f702921ed06908d7e14bdeb66c7.js",
     "service-worker.js": "/bugzy/service-worker.js",
     "static/css/main.85641beb.chunk.css.map": "/bugzy/static/css/main.85641beb.chunk.css.map"
   }
