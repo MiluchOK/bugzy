@@ -81,6 +81,7 @@ function LoginFormScreen(props) {
     let userCreationPaper = <CenteredPaper>
         <Typography>Existing Users</Typography>
         <Button
+            id={'add-user'}
             onClick={brokenAddUser ? () => {} : appendRandomUser}
             variant="contained"
             color="primary"
