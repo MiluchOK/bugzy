@@ -27,6 +27,7 @@ export default function BugzyField(props) {
 
     return(
         <FormControl
+            id={props.id}
             fullWidth={props.fullWidth}
             error={props.errorMessages.length > 0  || props.error}
             disabled={props.disabled}
