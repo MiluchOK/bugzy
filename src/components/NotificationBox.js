@@ -22,7 +22,7 @@ export default function NotificationBox() {
             <Avatar className={classes.checkIcon}>
                 <CheckIcon/>
             </Avatar>
-            <Typography> Success </Typography>
+            <Typography id={'status'}> Success </Typography>
         </CenteredPaper>
     )
 }
