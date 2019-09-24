@@ -96,7 +96,7 @@ function LoginForm(props) {
                   }}
             >
                 <BugzyField
-                    id="standard-name"
+                    id="username-field"
                     label="Username"
                     fullWidth={true}
                     error={globalErrors.length > 0}
@@ -109,7 +109,7 @@ function LoginForm(props) {
                 />
 
                 <BugzyField
-                    id="standard-name"
+                    id="password-field"
                     label="Password"
                     type={props.brokenPasswordField ? 'text' : 'password'}
                     fullWidth={true}
