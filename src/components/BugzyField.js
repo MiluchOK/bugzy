@@ -18,7 +18,7 @@ export default function BugzyField(props) {
 
     const classes = useStyles();
 
-    const adornment = <InputAdornment position="start">
+    const adornment = <InputAdornment position="start" className={'field-error'}>
             <Tooltip className={classes.error} title={props.errorMessages} placement="right-end">
                 <Error />
             </Tooltip>

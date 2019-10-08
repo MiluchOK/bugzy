@@ -76,7 +76,7 @@ function LoginForm(props) {
 
     return (
         <>
-            { loading ? <CircularProgress className={classes.spinner} /> : topCircle}
+            { loading ? <CircularProgress className={`${classes.spinner} loading-spinner`} /> : topCircle}
             { loading ? "" : renderedErrors}
             <form className={classes.formWrapper}
                   onSubmit={(e) => {
