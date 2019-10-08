@@ -67,7 +67,7 @@ function LoginForm(props) {
     };
 
     const renderedErrors = globalErrors.map((error) =>
-        (<Typography color={'error'} variant={'caption'}> {error} </Typography>)
+        (<Typography className={"error-message"} color={'error'} variant={'caption'}> {error} </Typography>)
     );
 
     let topCircle =  <Avatar className={classes.avatar}>
