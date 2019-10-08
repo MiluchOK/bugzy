@@ -111,7 +111,7 @@ function LoginForm(props) {
                 <BugzyField
                     id="password-field"
                     label="Password"
-                    type={props.brokenPasswordField ? 'text' : 'password'}
+                    type={'password'}
                     fullWidth={true}
                     error={globalErrors.length > 0}
                     errorMessages={values.password.errors}

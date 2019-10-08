@@ -33,12 +33,11 @@ function LoginFormScreen(props) {
     const [signInSuccess, setsignInSuccess] = React.useState(undefined);
     const queryParams = queryString.parse(props.location.search);
 
-    const brokenPasswordField = queryParams.bug === '1';
-    const brokenEmailVerification = queryParams.bug === '2';
-    const brokenLoadingLock = queryParams.bug === '3';
-    const brokenAddUser = queryParams.bug === '4';
-    const cantLogin = queryParams.bug === '5';
-    const loginEveryone = queryParams.bug === '6';
+    const brokenEmailVerification = queryParams.bug === '1';
+    const brokenLoadingLock = queryParams.bug === '2';
+    const brokenAddUser = queryParams.bug === '3';
+    const cantLogin = queryParams.bug === '4';
+    const loginEveryone = queryParams.bug === '5';
 
     // Turn all the bugs on when it is shitshow time
     // const shitshowMode = queryParams.shitshow === 'true';
@@ -71,7 +70,6 @@ function LoginFormScreen(props) {
     let mainPaper = <CenteredPaper>
         <LoginForm
             handleSubmit={handleSubmit}
-            brokenPasswordField={brokenPasswordField}
             brokenEmailVerification={brokenEmailVerification}
             brokenLoadingLock={brokenLoadingLock}
 
