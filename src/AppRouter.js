@@ -1,12 +1,16 @@
 import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import LoginFormScreen from './screens/LoginFormScreen'
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import LoginFormScreen from './screens/LoginFormScreen';
+import LocatorsOverview from './screens/LocatorsOverview';
 
 
 function AppRouter() {
     return(
         <Router>
-            <Route path="/" component={LoginFormScreen} />
+            <Switch>
+                <Route path="/locatorsOverview" exact component={LocatorsOverview} />
+                <Route path="/" component={LoginFormScreen} />
+            </Switch>
         </Router>
     )
 }
