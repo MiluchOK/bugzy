@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/bugzy/static/css/main.85641beb.chunk.css",
-    "main.js": "/bugzy/static/js/main.1371d12c.chunk.js",
-    "main.js.map": "/bugzy/static/js/main.1371d12c.chunk.js.map",
-    "runtime~main.js": "/bugzy/static/js/runtime~main.745f94ce.js",
-    "runtime~main.js.map": "/bugzy/static/js/runtime~main.745f94ce.js.map",
-    "static/js/2.9a555ac0.chunk.js": "/bugzy/static/js/2.9a555ac0.chunk.js",
-    "static/js/2.9a555ac0.chunk.js.map": "/bugzy/static/js/2.9a555ac0.chunk.js.map",
+    "main.js": "/bugzy/static/js/main.746b7159.chunk.js",
+    "main.js.map": "/bugzy/static/js/main.746b7159.chunk.js.map",
+    "runtime~main.js": "/bugzy/static/js/runtime~main.2607f8d5.js",
+    "runtime~main.js.map": "/bugzy/static/js/runtime~main.2607f8d5.js.map",
+    "static/js/2.50d30599.chunk.js": "/bugzy/static/js/2.50d30599.chunk.js",
+    "static/js/2.50d30599.chunk.js.map": "/bugzy/static/js/2.50d30599.chunk.js.map",
     "index.html": "/bugzy/index.html",
-    "precache-manifest.b71572c1ce67820810693ba33ea9898f.js": "/bugzy/precache-manifest.b71572c1ce67820810693ba33ea9898f.js",
+    "precache-manifest.b9c17e3f8338af11c4038a575328762b.js": "/bugzy/precache-manifest.b9c17e3f8338af11c4038a575328762b.js",
     "service-worker.js": "/bugzy/service-worker.js",
     "static/css/main.85641beb.chunk.css.map": "/bugzy/static/css/main.85641beb.chunk.css.map"
   }
